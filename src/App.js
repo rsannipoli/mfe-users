@@ -1,21 +1,18 @@
 import React from "react";
-import {Switch, Route, Router} from "react-router-dom";
-import { StylesProvider } from "@material-ui/core";
+import {ProfileEdit} from "./components/ProfileEdit";
+import {IntlProvider} from "react-intl";
+import {UtilsProvider} from "./layouts/UtilsProvider";
+import {CustomerProvider} from "./contexts/CustomerProvider";
 
-import Pricing from "./components/Pricing";
-import Landing from "./components/Landing";
+export default () => {
 
-export default ({history}) => {
     return <>
-        <div>
-            <StylesProvider>
-                <Router history={history}>
-                    <Switch>
-                        <Route exact path="/user/pricing" component={Pricing} />
-                        <Route path="/user/" component={Landing} />
-                    </Switch>
-                </Router>
-            </StylesProvider>
-        </div>
+        <IntlProvider locale="en">
+                <UtilsProvider>
+                    <div>
+                        <ProfileEdit/>
+                    </div>
+                </UtilsProvider>
+        </IntlProvider>
     </>;
 }
