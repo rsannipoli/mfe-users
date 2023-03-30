@@ -1,8 +1,8 @@
 import React from "react";
-import {ProfileEdit} from "./components/ProfileEdit";
 import {IntlProvider} from "react-intl";
 import {UtilsProvider} from "./layouts/UtilsProvider";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {UserProfile} from "./components/UserProfile";
 
 export default () => {
     return <>
@@ -11,7 +11,7 @@ export default () => {
                 <BrowserRouter>
                     <Switch>
                         <Route exact path="/user">
-                            <ProfileEdit />
+                            <UserProfile />
                         </Route>
                     </Switch>
                 </BrowserRouter>
