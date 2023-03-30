@@ -6,8 +6,6 @@ import axios from "axios";
 import * as yup from "yup";
 import {UtilsContext} from "../layouts/UtilsProvider";
 
-
-
 export const ProfileEdit = () => {
 
     const {showWarnMessage, showInfoMessage} = useContext(UtilsContext);
@@ -18,7 +16,6 @@ export const ProfileEdit = () => {
         phone,
     } = useValidation()
     const {_t} = useTranslations();
-
 
     const schema = yup.object().shape({
 
@@ -99,9 +96,7 @@ export const ProfileEdit = () => {
                     </div>
                 </div>
             </Form>
-
         </>
-
     );
 }
 
