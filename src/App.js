@@ -1,8 +1,7 @@
 import React from "react";
-import {ProfileEdit} from "./components/ProfileEdit";
 import {IntlProvider} from "react-intl";
 import {UtilsProvider} from "./layouts/UtilsProvider";
-import {CustomerProvider} from "./contexts/CustomerProvider";
+import {UserProfile} from "./components/UserProfile";
 
 export default () => {
 
@@ -10,7 +9,7 @@ export default () => {
         <IntlProvider locale="en">
                 <UtilsProvider>
                     <div>
-                        <ProfileEdit/>
+                        <UserProfile/>
                     </div>
                 </UtilsProvider>
         </IntlProvider>

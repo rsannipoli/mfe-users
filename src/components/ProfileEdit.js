@@ -49,6 +49,7 @@ export const ProfileEdit = () => {
         }
 
         setSubmitting(true);
+        console.log(toSend)
 
         axios.put("").then((res) => { // eslint-disable-line no-unused-vars
             setSubmitting(false);
@@ -61,11 +62,7 @@ export const ProfileEdit = () => {
 
     return (
         <>
-            <div className="col-12 md:col-6">
-                <h1>Profile Edit</h1>
-                <h4>Sottotitolo</h4>
-            </div>
-            <Divider/>
+
             <Form onSubmit={onSubmit} schema={schema} defaultValues={{}}>
                 <div className="grid fluid">
                     <div className="col-12 md:col-6">
