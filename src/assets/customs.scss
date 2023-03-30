@@ -1,0 +1,37 @@
+
+.p-datatable .p-datatable-tbody > tr > td {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+.p-datatable .p-datatable-thead > tr > th {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.p-datatable .p-datatable-header {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.p-picklist.p-picklist-search {
+  .p-picklist-buttons {
+    button {
+      border: solid 1px transparent;
+      background-color: transparent;
+    }
+  }
+}
+
+.p-tabview-nav-link .pi {
+  margin-right: 0.5rem;
+}
+
+
+#user-profile-edit-password {
+  .p-field {
+    width: 100%;
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+    }
+  }
+}

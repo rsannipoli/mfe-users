@@ -12,10 +12,22 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presets: ['@babel/preset-react', '@babel/preset-env'],
-                        plugins: ['@babel/plugin-transform-runtime'],
+                        plugins: ['@babel/plugin-transform-runtime', ["styled-jsx/babel", { "optimizeForSpeed": true }]],
                     }
                 }
-            },{
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    {
+                        loader: require('styled-jsx/webpack').loader,
+                        options: {
+                            type: (filename, options) => options.query.type || 'scoped'
+                        }
+                    }
+                ]
+            },
+            {
                 test: /\.(png|jpe?g|gif)$/i,
                 loader: 'file-loader',
                 options: {

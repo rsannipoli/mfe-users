@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {createMemoryHistory, createBrowserHistory} from 'history';
 import App from './App';
-import 'primereact/resources/themes/saga-blue/theme.css';
-import 'primereact/resources/primereact.min.css';
-import 'primeicons/primeicons.css';
-import 'primeflex/primeflex.css';
-import "starh-comp-common/dist/bundle.css"
+//import 'primereact/resources/themes/saga-blue/theme.css';
+//import 'primereact/resources/primereact.min.css';
+//import 'primeicons/primeicons.css';
+//import 'primeflex/primeflex.css';
+//import "starh-comp-common/dist/bundle.css"
 
 const userMount = (el, {onNavigate, defaultHistory, initialPath}) => {
     const history = defaultHistory || createMemoryHistory({ initialEntries: [initialPath] });

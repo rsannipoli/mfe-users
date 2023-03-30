@@ -45,21 +45,21 @@ export const ChangePassword = () => {
             <Form onSubmit={onSubmit} schema={schema}>
                 <div className="card m-2">
                     <div className="grid">
-                        <div className="col-4">
+                        <div className="col-12">
                             <Password
                                 withController={true}
                                 name={"currentPassword"}
                                 label={_t("user.profile-user.change-password.currentpassword")}
                             />
                         </div>
-                        <div className="col-4">
+                        <div className="col-12">
                             <Password
                                 withController={true}
                                 name={"newPassword"}
                                 label={_t("user.profile-user.change-password.newpassword")}
                             />
                         </div>
-                        <div className="col-4">
+                        <div className="col-12">
                             <Password
                                 withController={true}
                                 name={"confirmPassword"}
